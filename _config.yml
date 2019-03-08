@@ -1,0 +1,69 @@
+encoding: utf-8
+
+exclude:
+- README.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- alembic-jekyll-theme.gemspec
+- sub-pages
+- Makefile
+
+plugins:
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-feed
+- jemoji
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/Rome # Timezone for blog posts and alike
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page # Default layout
+      image: "/2017/assets/placeholder-social.png" # Default image for sharing
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post # Default layout
+      image: "/2017/assets/placeholder-social.png" # Default image for sharing
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+title: "Microservices 2017" # Site name or title, also used in jekyll-seo-tag
+logo: "/2017/assets/images/microservices.svg" # Site logo, also used in jekyll-seo-tag
+description: "Academia meets Industry" # Site description and default description, also used in jekyll-seo-tag
+url: "http://conf-micro.services/2017" # Site url, also used in jekyll-seo-tag
+baseurl: "/"
+email: "microservices@sdu.dk"
+avatarurl: "/2017/assets/images/favicon.ico" # Uses avatars for favicons to get multiple sites, eg Gravatar, Twitter, GitHub
+header_left: |
+  <a style="color:inherit; text-decoration: none !important;" href="/"><h2>
+  <img style="width: 50px; padding-bottom: 5px;" src="/2017/assets/images/microservices.svg" alt="">
+  Microservices</h2></a>
+header_right: |
+  <p style="margin-top: 10px; margin-bottom: -5px;">Odense</p>
+  <p>25-26 Oct. 2017</p>
+
+
+# 8. Site navigation
+navigation_header:
+  Home: /2017/index.html
+  Attending: /2017/attending/
+  Program: /2017/program/
+  Committees: /2017/committees/
+  Registration: /2017/registration/
