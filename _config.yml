@@ -48,7 +48,7 @@ title: "Microservices 2017" # Site name or title, also used in jekyll-seo-tag
 logo: "/2017/assets/images/microservices.svg" # Site logo, also used in jekyll-seo-tag
 description: "Academia meets Industry" # Site description and default description, also used in jekyll-seo-tag
 url: "http://conf-micro.services/2017" # Site url, also used in jekyll-seo-tag
-baseurl: "/"
+baseurl: "/2017"
 email: "microservices@sdu.dk"
 avatarurl: "/2017/assets/images/favicon.ico" # Uses avatars for favicons to get multiple sites, eg Gravatar, Twitter, GitHub
 header_left: |
