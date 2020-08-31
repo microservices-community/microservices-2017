@@ -75,6 +75,61 @@
 </div>
 
 
+<style>
+  .microservices_community_event {
+    line-height: 1.05em;
+    text-align: left;
+    margin-top: 9px;
+  }
+</style>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  <strong>Microservices Community Events</strong>
+  </div>
+  <ul class="list-group">
+  <li class="list-group-item"> 
+    <div>Upcoming events</div>
+    <div id="microservices_community_events_upcoming"></div>
+  </li>
+  <li class="list-group-item"> 
+    <div>Latests past events</div>
+    <div id="microservices_community_events_past"></div>
+  </li>
+  </div>
+</div>
+
+<script>
+function microservices_community_events( data ){
+  const upcoming = $( "#microservices_community_events_upcoming" )
+  data.upcoming.forEach( element => {
+    upcoming.append( 
+      `<div>
+      <a target="_blank" href="${ element.link }">
+        <div class="microservices_community_event" >${ element.title }</div>
+      </a>
+      </div>` )
+  });
+  const past = $( "#microservices_community_events_past" )
+  data.past.forEach( ( element, index ) => {
+    if( index > 2 ){ return }
+    past.append( 
+      `<div>
+      <a target="_blank" href="${ element.link }">
+        <div class="microservices_community_event" >${ element.title }</span>
+      </a>
+      </div>` )
+  });
+}
+$( document ).ready( () => {
+  const url = "https://www.microservices.community/events.json"
+  $.ajax({
+    url: url,
+    jsonp: "microservices_community_events",
+    dataType: "jsonp"
+  })
+})
+
 <script>
 $(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});
 </script>
