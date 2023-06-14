@@ -43,7 +43,7 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 title: "Microservices 2017" # Site name or title, also used in jekyll-seo-tag
-logo: "/2017/assets/images/microservices.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/2017/assets/images/microservices.png" # Site logo, also used in jekyll-seo-tag
 description: "Academia meets Industry" # Site description and default description, also used in jekyll-seo-tag
 url: "http://conf-micro.services/2017" # Site url, also used in jekyll-seo-tag
 baseurl: "/2017"
@@ -51,7 +51,7 @@ email: "microservices@sdu.dk"
 avatarurl: "/2017/assets/images/favicon.ico" # Uses avatars for favicons to get multiple sites, eg Gravatar, Twitter, GitHub
 header_left: |
   <a style="color:inherit; text-decoration: none !important;" href="/"><h2>
-  <img style="width: 50px; padding-bottom: 5px;" src="/2017/assets/images/microservices.svg" alt="">
+  <img style="width: 50px; padding-bottom: 5px;" src="/2017/assets/images/microservices.png" alt="">
   Microservices</h2></a>
 header_right: |
   <p style="margin-top: 10px; margin-bottom: -5px;">Odense</p>
